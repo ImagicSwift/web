@@ -1,0 +1,12 @@
+Array.prototype.pop()删除一个数组中的最后的一个元素，并且返回这个元素。即，删除一个数组中的最后一个元素，并且把这个删除掉的元素返回给调用者。
+eg:
+  var arr1 = [1,2,3];
+  var arr2 = ['a', 'b'];
+  var pop = Array.prototype.pop.bind(arr1);
+  arr2.push(pop());
+  console.log(arr1)
+  console.log(arr2)
+
+结果如下：
+	[1, 2]
+	["a", "b", 3]
